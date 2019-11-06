@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import APIURL from '../../helpers/environment';
 import GlobalResults from './GlobalResults/GlobalResults';
-import FighterCreate from '../FighterUpdate/FighterCreate';
+import FighterCreate from '../CRUD/FighterCreate';
+import './Ratings.css'
 
 const Ratings = (props) => {
     console.log(props)
@@ -9,7 +10,7 @@ const Ratings = (props) => {
     const [ratings, setRatings] = useState([]);
 
     const getFighters = () => {
-        fetch(`${APIURL}/Ratings/`, {
+        fetch(`${APIURL}/ratings/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -25,27 +26,11 @@ const Ratings = (props) => {
         getFighters()
     }, [])
 
-    const GlobalResultsRows = () => {
-        const columns = {
-            fighter: 'fighter name',
-            fighterRatings: 'fighter rating',
-        }
-        return [<GlobalResults key={'column names'} testData={columns} />].concat(
-            ratings.map((ratingInfo, index) => {
-                console.log(ratingInfo, index);
-                return <GlobalResults key={index} testData={ratingInfo} />
-            })
-        )
-    }
-
     return(
         <div>
-            <FighterCreate token={props.token} getFighters={getFighters}/>
-        <table>
-            <tbody>
-                {GlobalResultsRows()}
-            </tbody>
-        </table>
+            <FighterCreate />
+            <br />
+            <GlobalResults getFighters={getFighters} ratings={ratings} token={props.token}/>
         </div>
     )
 }

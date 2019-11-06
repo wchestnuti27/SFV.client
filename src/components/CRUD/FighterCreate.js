@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import APIURL from '../../helpers/environment';
+// import FighterEdit from '../FighterUpdate/FighterEdit';
 
 const FighterCreate = (props) => {
 
@@ -78,7 +79,7 @@ const FighterCreate = (props) => {
                             <Label htmlFor="ratings"/>
                             <Input name="ratings" value={ratings} onChange={(e) => setRatings(e.target.value)}/>
                         </FormGroup>    
-                            <Button type="submit">Click to Submit</Button>
+                            <Button color="submit">Click to Submit</Button>
                         </Form>
                 </>
             )
