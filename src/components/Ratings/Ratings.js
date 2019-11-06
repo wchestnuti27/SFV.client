@@ -1,13 +1,15 @@
 import React, {useState, useEffect} from 'react';
-import './Ratings.css';
 import APIURL from '../../helpers/environment';
+import GlobalResults from './GlobalResults/GlobalResults';
+import FighterCreate from '../FighterUpdate/FighterCreate';
 
 const Ratings = (props) => {
+    console.log(props)
 
     const [ratings, setRatings] = useState([]);
 
-    useEffect(() => {
-        fetch(`${APIURL}/ratings/`, {
+    const getFighters = () => {
+        fetch(`${APIURL}/Ratings/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -17,28 +19,34 @@ const Ratings = (props) => {
         .then(res => res.json())
         .then(json => setRatings(json))
         .catch(err => console.log(err))
+    }
+
+    useEffect(() => {
+        getFighters()
     }, [])
 
-    // const RatingRows = () => {
-    //     const RatingColumns = {
-    //         fighter: 'Fighter Name',
-    //         rating: 'Fighter Rating',
-    //     }
-    //     return [<Rating key={'column names'} testData={RatingColumns} />].concat(
-    //         rating.map((ratingInfo, index) => {
-    //             // console.log(RatingInfo, index);
-    //             return <Rating key={index} testData={ratingInfo} />
-    //         })
-    //     )
-    // }
+    const GlobalResultsRows = () => {
+        const columns = {
+            fighter: 'fighter name',
+            fighterRatings: 'fighter rating',
+        }
+        return [<GlobalResults key={'column names'} testData={columns} />].concat(
+            ratings.map((ratingInfo, index) => {
+                console.log(ratingInfo, index);
+                return <GlobalResults key={index} testData={ratingInfo} />
+            })
+        )
+    }
 
     return(
+        <div>
+            <FighterCreate token={props.token} getFighters={getFighters}/>
         <table>
             <tbody>
-                {/* <Rating testData={testDataPies} /> */}
-                {/* {RatingRows()} */}
+                {GlobalResultsRows()}
             </tbody>
         </table>
+        </div>
     )
 }
 
