@@ -14,29 +14,14 @@ const Auth = (props) => {
         return login ? 'Login' : 'Signup';
     }
 
-    const logginToggle = (event) => {
+    const loginToggle = (event) => {
         event.preventDefault();
-
         setLogin(!login);
-
         setUsername('');
         setPassword('');
     }
 
-    // const signupFields = () => !login ?
-    //     (
-    //         <div>
-    //             <label htmlFor='firstName'>First Name:</label>
-    //             <br/>
-    //             <input type='text' id="firstName" value={firstName} onChange={ (e) => setFirstName(e.target.value) } />
-    //             <br/>
-    //             <label htmlFor='lastName'>Last Name:</label>
-    //             <br/>
-    //             <input type='text' id='lastName' value={lastName} onChange={ (e) => setLastName(e.target.value) } />
-    //         </div>
-    //     ) : null;
-
-        const handleSumbit = (e) => {
+        const handleSubmit = (e) => {
             e.preventDefault();
 
             const url = login ? `${APIURL}/auth/signin` : `${APIURL}/auth/signup`;
@@ -59,9 +44,9 @@ const Auth = (props) => {
 
     return (
         <div>
-            <form onSubmit={handleSumbit}>
+            <form onSubmit={handleSubmit}>
                 <h1>{title()}</h1>
-                <label htmlFor='username'>username:</label>
+                <label htmlFor='username'>Username:</label>
                 <br/>
                 <input type='text' id='username' value={username} onChange={ (e) => setUsername(e.target.value) } />
                 <br/>
@@ -69,7 +54,7 @@ const Auth = (props) => {
                 <br/>
                 <input type='password' id='password' value={password} onChange={ (e) => setPassword(e.target.value) } />
                 <br/>
-                <button onClick={logginToggle}>Login/Signup Toggle</button>
+                <button onClick={loginToggle}>Login/Signup Toggle</button>
                 <br/>
                 <button type='submit'>Submit</button>
             </form>

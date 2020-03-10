@@ -1,40 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import APIURL from '../../helpers/environment';
 // import FighterEdit from '../FighterUpdate/FighterEdit';
 
+
 const FighterCreate = (props) => {
-
-    console.log(props);
-
-    const [fighter, setFighter] = useState('');
-    const [ratings, setRatings] = useState('');
     
-    const handleSubmit = (e) => {
-            e.preventDefault();
-            fetch(`${APIURL}/Ratings/`, {
-                method: 'POST',
-                body: JSON.stringify({fighter: fighter, fighterRatings: ratings}),
-                headers: new Headers({
-                    'Content-Type': 'application/json',
-                    'Authorization' : props.token
-                })
-            }) .then ((res) => res.json())
-            .then((fightData) => {
-                console.log(fightData);
-                setFighter('');
-                setRatings('');
-                props.getFighters();
-            })
-        }
-
-            return(
-                <>
+    return(
+        <>
                     <h3>Rate a Fighter</h3>
-                    <Form onSubmit={handleSubmit}>
+                     <Form>
                         <FormGroup>
                             <Label htmlFor="fighter" />
-                            <Input type="select" name="fighter" value={fighter} onChange={(e) => {setFighter(e.target.value); console.log(e.target.value)}}>    
+                            <Input type="select" name="fighter" value={props.fighter} onChange={(e) => {props.setFighter(e.target.value); console.log(e.target.value)}}>    
                                 <option value=""></option>
                                 <option value="Ryu">Ryu</option>
                                 <option value="Chun-Li">Chun-Li</option>
@@ -73,17 +50,19 @@ const FighterCreate = (props) => {
                                 <option value="E.Honda">E.Honda</option>
                                 <option value="Lucia">Lucia</option>
                                 <option value="Poison">Poison</option>
+                                <option value="Abigail">Abigail</option>
+                                <option value="Gill">Gill</option>
+                                <option value="Seth">Seth</option>
                                 </Input>
                             </FormGroup>
                         <FormGroup>
                             <Label htmlFor="ratings"/>
-                            <Input name="ratings" value={ratings} onChange={(e) => setRatings(e.target.value)}/>
+                            <Input name="ratings" value={props.ratings} onChange={(e) => props.setRatings(e.target.value)}/>
                         </FormGroup>    
-                            <Button color="submit">Click to Submit</Button>
+                            <Button color="submit" onClick={props.postFighter}>Click to Submit</Button>
                         </Form>
                 </>
             )
         }
 
-    
 export default FighterCreate;

@@ -28,7 +28,7 @@ const Ratings = (props) => {
 
     return(
         <div>
-            <FighterCreate />
+            
             <br />
             <GlobalResults getFighters={getFighters} ratings={ratings} token={props.token}/>
         </div>

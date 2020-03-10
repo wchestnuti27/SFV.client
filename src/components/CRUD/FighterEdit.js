@@ -1,30 +1,43 @@
 import React, {useState} from 'react';
-// import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
+import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import APIURL from '../../helpers/environment';
 
 const FighterUpdate = (props) => {
-
     const[editFighter, setEditFighter] = useState();
     const[editFighterRatings, setFighterRatings] = useState();
 
-    const updateFighter = (event, fighter) => {
-        event.preventDefault();
+    const handleSubmit= (e) => {
+        e.preventDefault();
         fetch(`${APIURL}/ratings/${fighter.id}`, {
-            method: 'PUT',
-            body: JSON.stringify({fighter: editFighter, fighterRatings: editFighterRatings}),
+            method: 'POST',
+            body: JSON.stringify({log: {fighter: editFighter, fighterRatings: editFighterRatings}}),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': props.token
             })
-            .then(res => console.log(res))
+        }).then((res) => res.json())
+        .then((logData) => {
+            console.log(logData);
+            setEditFighter('');
+            setFighterRatings('');
         })
     }
 
 return(
-    <div>
-    
-    </div>
-    )
+    <Form onSubmit = {handleSubmit}>
+        <FormGroup>
+            <Label htmlFor = "editFighter"/>
+            <Input name = "fighter" value = {fighter} onChange = {(e) => setEditFighter(e.target.value)}/>                             
+        </FormGroup>
+        <FormGroup>
+            <Label htmlFor = "fighterRating"/>
+            <Input type = "select" name = "rating" value = {rating} onChange = {(e) => setFighterRatings(e.target.value)}>
+            </Input>
+        </FormGroup>
+        <Button type = "submit">click to Submit</Button>
+    </Form>
+  )
 }
+
 
 export default FighterUpdate;
