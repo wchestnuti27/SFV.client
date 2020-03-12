@@ -1,13 +1,14 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import './FighterCreate.css';
 // import FighterEdit from '../FighterUpdate/FighterEdit';
 
 
 const FighterCreate = (props) => {
     
     return(
-        <>
-                    <h3>Rate a Fighter</h3>
+                <>
+                    <h2 style = {{color: "blue", fontSize: "25px"}}>Rate a Fighter</h2><br/>
                      <Form>
                         <FormGroup>
                             <Label htmlFor="fighter" />
@@ -55,12 +56,13 @@ const FighterCreate = (props) => {
                                 <option value="Seth">Seth</option>
                                 </Input>
                             </FormGroup>
+                            <br />
                         <FormGroup>
                             <Label htmlFor="ratings"/>
                             <Input name="ratings" value={props.ratings} onChange={(e) => props.setRatings(e.target.value)}/>
                         </FormGroup>    
-                            <Button color="submit" onClick={props.postFighter}>Click to Submit</Button>
-                        </Form>
+                            <Button color="submit" onClick={props.postFighter}>Click to Submit</Button><br /><br /><br /><br />
+                        </Form><br/>
                 </>
             )
         }

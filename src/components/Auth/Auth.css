@@ -1,19 +1,19 @@
 input {
     border: none;
     border-radius: 5px;
-    background-color: lightgrey;
+    background-color: orange;
     height: 40px;
     width: 300px;
     text-indent: 5px;
     margin-bottom: 1em;
     margin-top: 1em;
     font-size: 18px;
+    color: white;
 }
 
 input:focus {
     outline: none;
-    background-color: grey;
-    color: white;
+    background-color: orange;
 }
 
 button {
@@ -21,11 +21,11 @@ button {
     border: none;
     height: 50px;
     width: 200px;
-    background-color: lightslategray;
+    background-color: orange;
     color: white;
     cursor: pointer;
 }
 
 button:focus {
-    outline-color: lightgrey;
+    outline-color: orange;
 }

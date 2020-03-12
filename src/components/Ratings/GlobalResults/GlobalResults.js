@@ -8,6 +8,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button, Label, Input } from 'reactstrap';
+// import StreetCards from '../StreetCards';
 
 
 const useStyles = makeStyles(theme => ({
@@ -23,6 +24,8 @@ const useStyles = makeStyles(theme => ({
       padding: theme.spacing(2, 4, 3),
     },
   }));
+
+  
   
   const Fade = React.forwardRef(function Fade(props, ref) {
     const { in: open, children, onEnter, onExited, ...other } = props;
@@ -118,13 +121,15 @@ const updateFighter = (fighter) => {
     
     
 return(
-        <div>
+        <div style = {{textAlign: "center"}}>
+            {/* <StreetCards/> */}
+
             <FighterCreate setFighter={setFighter} setRatings={setRatings} postFighter={postFighter} ratings={ratings} fighter={fighter}/>
             <table>
                 <thead>
                     <tr>
-                        <th>Fighter</th>
-                        <th>Fighter Rating</th>
+                        <th style = {{color: "blue", fontSize: "25px"}}>Fighter</th>
+                        <th style = {{color: "blue", fontSize: "25px"}}>Fighter Rating</th>
                     </tr>
                 </thead>
                 <tbody>

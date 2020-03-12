@@ -1,12 +1,14 @@
 td {
-    border: 1px solid black;
+    border: 2px solid black;
 
 }
 
 table {
-    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-#tableName {
-    text-align: center;
+th {
+    height: 50px;
 }
+
