@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import ReactCardFlip from 'react-card-flip'
 import './StreetCards.css'
+
 import SFV1 from '../../../src/Assets/SFV1.png';
 import Abigail from '../../../src/Assets/Abigail.png';
 import Akuma from '../../../src/Assets/Akuma.png';
@@ -65,13 +67,15 @@ const StreetCards = () => {
         setIsFlipped(!isFlipped)
     }
 
-    return (
-      <>
-    <h1 style = {{color: "blue", fontSize: "40px"}}>The Fighters</h1><br/> <br/>
+return (
+<>
+<h1 style = {{color: "blue", fontSize: "40px"}}>The Fighters</h1><br/> <br/>
     
-     {/* Row 1 */}
-      <div style={row}>
-        <div style={column}>
+{/* Row 1 */}
+<div style={row}>
+<div style={column}>
+
+          {/* Abigail */}
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -99,6 +103,7 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
+        {/* Akuma */}
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <div 
           style = {{
@@ -125,7 +130,8 @@ const StreetCards = () => {
           <button onClick={handleClick}>Flip</button>
         </div>
         </ReactCardFlip>
-
+        
+        {/* Alex */}
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
                   <div 
                     style = {{
@@ -153,6 +159,7 @@ const StreetCards = () => {
                   </div>
                 </ReactCardFlip>
 
+          {/* Balrog */}
                 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -180,6 +187,7 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
+        {/* Birdie */}
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -207,6 +215,7 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
+        {/* Blanka */}
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -243,6 +252,8 @@ const StreetCards = () => {
 {/* Row 2 */}
 <div style={row}>
 <div style={column}>
+
+{/* Cammy */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -253,7 +264,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Abigail" src={Abigail} alt="SFV" />
+    <img id="Cammy" src={Cammy} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -270,6 +281,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Chun-Li */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
 <div 
   style = {{
@@ -280,7 +292,7 @@ const StreetCards = () => {
       display: "flex", 
       justifyContent: "center", 
       alignItems: "center"}}>
-  <img id="Akuma" src={Akuma} alt="SFV" />
+  <img id="ChunLi" src={ChunLi} alt="SFV" />
   <button onClick={handleClick}>Flip</button>
 </div>
 
@@ -297,6 +309,7 @@ const StreetCards = () => {
 </div>
 </ReactCardFlip>
 
+{/* Cody */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -307,7 +320,7 @@ const StreetCards = () => {
                 display: "flex", 
                 justifyContent: "center", 
                 alignItems: "center"}}>
-            <img id="Alex" src={Alex} alt="SFV" />
+            <img id="Cody" src={Cody} alt="SFV" />
             <button onClick={handleClick}>Flip</button>
           </div>
   
@@ -324,7 +337,8 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+{/* Dhalsim */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
         backgroundColor: "black", 
@@ -334,7 +348,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Balrog" src={Balrog} alt="SFV" />
+    <img id="Dhalsim" src={Dhalsim} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -351,6 +365,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Ed */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -361,7 +376,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Birdie" src={Birdie} alt="SFV" />
+    <img id="Ed" src={Ed} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -378,6 +393,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* E. Honda */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -388,7 +404,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Blanka" src={Blanka} alt="SFV" />
+    <img id="EHonda" src={EHonda} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -414,6 +430,8 @@ const StreetCards = () => {
 {/* Row 3 */}
 <div style={row}>
 <div style={column}>
+
+{/* Falke */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -424,7 +442,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Abigail" src={Abigail} alt="SFV" />
+    <img id="Falke" src={Falke} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -441,6 +459,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* F.A.N.G */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
 <div 
   style = {{
@@ -451,7 +470,7 @@ const StreetCards = () => {
       display: "flex", 
       justifyContent: "center", 
       alignItems: "center"}}>
-  <img id="Akuma" src={Akuma} alt="SFV" />
+  <img id="FANG" src={FANG} alt="SFV" />
   <button onClick={handleClick}>Flip</button>
 </div>
 
@@ -468,6 +487,7 @@ const StreetCards = () => {
 </div>
 </ReactCardFlip>
 
+{/* G */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -478,7 +498,7 @@ const StreetCards = () => {
                 display: "flex", 
                 justifyContent: "center", 
                 alignItems: "center"}}>
-            <img id="Alex" src={Alex} alt="SFV" />
+            <img id="G" src={G} alt="SFV" />
             <button onClick={handleClick}>Flip</button>
           </div>
   
@@ -495,6 +515,7 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
+        {/* Gill */}
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -505,7 +526,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Balrog" src={Balrog} alt="SFV" />
+    <img id="Gill" src={Gill} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -522,6 +543,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Guile */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -532,7 +554,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Birdie" src={Birdie} alt="SFV" />
+    <img id="Guile" src={Guile} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -549,6 +571,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Ibuki */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -559,7 +582,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Blanka" src={Blanka} alt="SFV" />
+    <img id="Ibuki" src={Ibuki} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -577,177 +600,6 @@ const StreetCards = () => {
 </ReactCardFlip>
      </div>
 </div> <br/>
-<br/>
-<br/>
-<br/>
-
-
-{/* Row 3 */}
-<div style={row}>
-<div style={column}>
-<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-  <div 
-    style = {{
-        backgroundColor: "black", 
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <img id="Abigail" src={Abigail} alt="SFV" />
-    <button onClick={handleClick}>Flip</button>
-  </div>
-
-  <div 
-    style = {{
-        backgroundColor: "black",
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <button onClick={handleClick}>Flip</button>
-  </div>
-</ReactCardFlip>
-
-<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-<div 
-  style = {{
-      backgroundColor: "black", 
-      height: "210px", 
-      width: "210px", 
-      color: "white", 
-      display: "flex", 
-      justifyContent: "center", 
-      alignItems: "center"}}>
-  <img id="Akuma" src={Akuma} alt="SFV" />
-  <button onClick={handleClick}>Flip</button>
-</div>
-
-<div 
-  style = {{
-      backgroundColor: "black",
-      height: "210px", 
-      width: "210px", 
-      color: "white", 
-      display: "flex", 
-      justifyContent: "center", 
-      alignItems: "center"}}>
-  <button onClick={handleClick}>Flip</button>
-</div>
-</ReactCardFlip>
-
-<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-          <div 
-            style = {{
-                backgroundColor: "black", 
-                height: "210px", 
-                width: "210px", 
-                color: "white", 
-                display: "flex", 
-                justifyContent: "center", 
-                alignItems: "center"}}>
-            <img id="Alex" src={Alex} alt="SFV" />
-            <button onClick={handleClick}>Flip</button>
-          </div>
-  
-          <div 
-            style = {{
-                backgroundColor: "black",
-                height: "210px", 
-                width: "210px", 
-                color: "white", 
-                display: "flex", 
-                justifyContent: "center", 
-                alignItems: "center"}}>
-            <button onClick={handleClick}>Flip</button>
-          </div>
-        </ReactCardFlip>
-
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-  <div 
-    style = {{
-        backgroundColor: "black", 
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <img id="Balrog" src={Balrog} alt="SFV" />
-    <button onClick={handleClick}>Flip</button>
-  </div>
-
-  <div 
-    style = {{
-        backgroundColor: "black",
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <button onClick={handleClick}>Flip</button>
-  </div>
-</ReactCardFlip>
-
-<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-  <div 
-    style = {{
-        backgroundColor: "black", 
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <img id="Birdie" src={Birdie} alt="SFV" />
-    <button onClick={handleClick}>Flip</button>
-  </div>
-
-  <div 
-    style = {{
-        backgroundColor: "black",
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <button onClick={handleClick}>Flip</button>
-  </div>
-</ReactCardFlip>
-
-<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-  <div 
-    style = {{
-        backgroundColor: "black", 
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <img id="Blanka" src={Blanka} alt="SFV" />
-    <button onClick={handleClick}>Flip</button>
-  </div>
-
-  <div 
-    style = {{
-        backgroundColor: "black",
-        height: "210px", 
-        width: "210px", 
-        color: "white", 
-        display: "flex", 
-        justifyContent: "center", 
-        alignItems: "center"}}>
-    <button onClick={handleClick}>Flip</button>
-  </div>
-</ReactCardFlip>
-     </div>
-</div><br/>
 <br/>
 <br/>
 <br/>
@@ -756,6 +608,8 @@ const StreetCards = () => {
 {/* Row 4 */}
 <div style={row}>
 <div style={column}>
+
+{/* Juri */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -766,7 +620,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Abigail" src={Abigail} alt="SFV" />
+    <img id="Juri" src={Juri} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -783,6 +637,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Kage */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
 <div 
   style = {{
@@ -793,7 +648,7 @@ const StreetCards = () => {
       display: "flex", 
       justifyContent: "center", 
       alignItems: "center"}}>
-  <img id="Akuma" src={Akuma} alt="SFV" />
+  <img id="Kage" src={Kage} alt="SFV" />
   <button onClick={handleClick}>Flip</button>
 </div>
 
@@ -810,6 +665,7 @@ const StreetCards = () => {
 </div>
 </ReactCardFlip>
 
+{/* Karin */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -820,7 +676,7 @@ const StreetCards = () => {
                 display: "flex", 
                 justifyContent: "center", 
                 alignItems: "center"}}>
-            <img id="Alex" src={Alex} alt="SFV" />
+            <img id="Karin" src={Karin} alt="SFV" />
             <button onClick={handleClick}>Flip</button>
           </div>
   
@@ -837,7 +693,8 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+{/* Ken */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
         backgroundColor: "black", 
@@ -847,7 +704,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Balrog" src={Balrog} alt="SFV" />
+    <img id="Ken" src={Ken} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -864,6 +721,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Kolin */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -874,7 +732,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Birdie" src={Birdie} alt="SFV" />
+    <img id="Kolin" src={Kolin} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -891,6 +749,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Laura */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -901,7 +760,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Blanka" src={Blanka} alt="SFV" />
+    <img id="Laura" src={Laura} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -927,6 +786,8 @@ const StreetCards = () => {
 {/* Row 5 */}
 <div style={row}>
 <div style={column}>
+
+  {/* Lucia */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -937,7 +798,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Abigail" src={Abigail} alt="SFV" />
+    <img id="Lucia" src={Lucia} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -954,6 +815,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* M. Bison */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
 <div 
   style = {{
@@ -964,7 +826,7 @@ const StreetCards = () => {
       display: "flex", 
       justifyContent: "center", 
       alignItems: "center"}}>
-  <img id="Akuma" src={Akuma} alt="SFV" />
+  <img id="MBison" src={MBison} alt="SFV" />
   <button onClick={handleClick}>Flip</button>
 </div>
 
@@ -981,6 +843,7 @@ const StreetCards = () => {
 </div>
 </ReactCardFlip>
 
+{/* Menat */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -991,7 +854,7 @@ const StreetCards = () => {
                 display: "flex", 
                 justifyContent: "center", 
                 alignItems: "center"}}>
-            <img id="Alex" src={Alex} alt="SFV" />
+            <img id="Menat" src={Menat} alt="SFV" />
             <button onClick={handleClick}>Flip</button>
           </div>
   
@@ -1008,7 +871,8 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+{/* Nash */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
         backgroundColor: "black", 
@@ -1018,7 +882,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Balrog" src={Balrog} alt="SFV" />
+    <img id="Nash" src={Nash} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -1035,6 +899,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Necalli */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -1045,7 +910,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Birdie" src={Birdie} alt="SFV" />
+    <img id="Necalli" src={Necalli} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -1062,6 +927,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Poison */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -1072,7 +938,185 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Blanka" src={Blanka} alt="SFV" />
+    <img id="Poison" src={Poison} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+     </div>
+</div><br/>
+<br/>
+<br/>
+<br/>
+
+
+{/* Row 6 */}
+<div style={row}>
+<div style={column}>
+
+{/* Rashid */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Rashid" src={Rashid} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+{/* R. Mika */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+<div 
+  style = {{
+      backgroundColor: "black", 
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <img id="RMika" src={RMika} alt="SFV" />
+  <button onClick={handleClick}>Flip</button>
+</div>
+
+<div 
+  style = {{
+      backgroundColor: "black",
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <button onClick={handleClick}>Flip</button>
+</div>
+</ReactCardFlip>
+
+{/* Ryu */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <div 
+            style = {{
+                backgroundColor: "black", 
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <img id="Ryu" src={Ryu} alt="SFV" />
+            <button onClick={handleClick}>Flip</button>
+          </div>
+  
+          <div 
+            style = {{
+                backgroundColor: "black",
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <button onClick={handleClick}>Flip</button>
+          </div>
+        </ReactCardFlip>
+
+{/* Sagat */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Sagat" src={Sagat} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+{/* Sakura */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Sakura" src={Sakura} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+{/* Seth */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Seth" src={Seth} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -1095,9 +1139,11 @@ const StreetCards = () => {
 <br/>
 
 
-{/* Row 6 */}
+{/* Row 7 */}
 <div style={row}>
 <div style={column}>
+
+{/* Urien */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
@@ -1108,7 +1154,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Abigail" src={Abigail} alt="SFV" />
+    <img id="Urien" src={Urien} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
@@ -1125,6 +1171,7 @@ const StreetCards = () => {
   </div>
 </ReactCardFlip>
 
+{/* Vega */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
 <div 
   style = {{
@@ -1135,7 +1182,7 @@ const StreetCards = () => {
       display: "flex", 
       justifyContent: "center", 
       alignItems: "center"}}>
-  <img id="Akuma" src={Akuma} alt="SFV" />
+  <img id="Vega" src={Vega} alt="SFV" />
   <button onClick={handleClick}>Flip</button>
 </div>
 
@@ -1152,6 +1199,7 @@ const StreetCards = () => {
 </div>
 </ReactCardFlip>
 
+{/* Zangief */}
 <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
@@ -1162,7 +1210,7 @@ const StreetCards = () => {
                 display: "flex", 
                 justifyContent: "center", 
                 alignItems: "center"}}>
-            <img id="Alex" src={Alex} alt="SFV" />
+            <img id="Zangief" src={Zangief} alt="SFV" />
             <button onClick={handleClick}>Flip</button>
           </div>
   
@@ -1179,7 +1227,8 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
 
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+{/* Zeku */}
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
   <div 
     style = {{
         backgroundColor: "black", 
@@ -1189,7 +1238,7 @@ const StreetCards = () => {
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center"}}>
-    <img id="Balrog" src={Balrog} alt="SFV" />
+    <img id="Zeku" src={Zeku} alt="SFV" />
     <button onClick={handleClick}>Flip</button>
   </div>
 
