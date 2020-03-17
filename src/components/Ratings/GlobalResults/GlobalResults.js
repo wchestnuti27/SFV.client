@@ -8,7 +8,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button, Label, Input } from 'reactstrap';
-// import StreetCards from '../StreetCards';
+import StreetCards from '../StreetCards';
 
 
 const useStyles = makeStyles(theme => ({
@@ -122,7 +122,15 @@ const updateFighter = (fighter) => {
     
 return(
         <div style = {{textAlign: "center"}}>
-            {/* <StreetCards/> */}
+            <br />
+            <br />
+            <br />
+            <br />
+            <StreetCards/>
+            <br />
+            <br />
+            <br />
+            <br />
 
             <FighterCreate setFighter={setFighter} setRatings={setRatings} postFighter={postFighter} ratings={ratings} fighter={fighter}/>
             <table>

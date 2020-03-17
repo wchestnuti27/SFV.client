@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Auth from './components/Auth/Auth';
 import Ratings from './components/Ratings/Ratings';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 

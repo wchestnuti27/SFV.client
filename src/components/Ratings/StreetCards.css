@@ -1,0 +1,12 @@
+a:active {
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 12px;
+  }
+
+/* .cards {
+  display: inline;
+  margin: 10px;
+  
+} */
