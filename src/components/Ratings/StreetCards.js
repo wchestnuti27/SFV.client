@@ -44,8 +44,6 @@ import Zangief from '../../../src/Assets/Zangief.png';
 import Zeku from '../../../src/Assets/Zeku.png';
 
 
-
-
 const StreetCards = () => {
 
   const row = {
@@ -68,14 +66,17 @@ const StreetCards = () => {
     }
 
     return (
-     
+      <>
+    <h1 style = {{color: "blue", fontSize: "40px"}}>The Fighters</h1><br/> <br/>
+    
+     {/* Row 1 */}
       <div style={row}>
         <div style={column}>
         <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
           <div 
             style = {{
                 backgroundColor: "black", 
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -88,7 +89,7 @@ const StreetCards = () => {
           <div 
             style = {{
                 backgroundColor: "black",
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -102,7 +103,7 @@ const StreetCards = () => {
         <div 
           style = {{
               backgroundColor: "black", 
-              height: "200px", 
+              height: "210px", 
               width: "210px", 
               color: "white", 
               display: "flex", 
@@ -115,7 +116,7 @@ const StreetCards = () => {
         <div 
           style = {{
               backgroundColor: "black",
-              height: "200px", 
+              height: "210px", 
               width: "210px", 
               color: "white", 
               display: "flex", 
@@ -129,7 +130,7 @@ const StreetCards = () => {
                   <div 
                     style = {{
                         backgroundColor: "black", 
-                        height: "200px", 
+                        height: "210px", 
                         width: "210px", 
                         color: "white", 
                         display: "flex", 
@@ -142,7 +143,7 @@ const StreetCards = () => {
                   <div 
                     style = {{
                         backgroundColor: "black",
-                        height: "200px", 
+                        height: "210px", 
                         width: "210px", 
                         color: "white", 
                         display: "flex", 
@@ -156,7 +157,7 @@ const StreetCards = () => {
           <div 
             style = {{
                 backgroundColor: "black", 
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -169,7 +170,7 @@ const StreetCards = () => {
           <div 
             style = {{
                 backgroundColor: "black",
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -183,7 +184,7 @@ const StreetCards = () => {
           <div 
             style = {{
                 backgroundColor: "black", 
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -196,7 +197,7 @@ const StreetCards = () => {
           <div 
             style = {{
                 backgroundColor: "black",
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -210,7 +211,7 @@ const StreetCards = () => {
           <div 
             style = {{
                 backgroundColor: "black", 
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -223,7 +224,7 @@ const StreetCards = () => {
           <div 
             style = {{
                 backgroundColor: "black",
-                height: "200px", 
+                height: "210px", 
                 width: "210px", 
                 color: "white", 
                 display: "flex", 
@@ -233,7 +234,980 @@ const StreetCards = () => {
           </div>
         </ReactCardFlip>
              </div>
-        </div>
+        </div> <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+{/* Row 2 */}
+<div style={row}>
+<div style={column}>
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Abigail" src={Abigail} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+<div 
+  style = {{
+      backgroundColor: "black", 
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <img id="Akuma" src={Akuma} alt="SFV" />
+  <button onClick={handleClick}>Flip</button>
+</div>
+
+<div 
+  style = {{
+      backgroundColor: "black",
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <button onClick={handleClick}>Flip</button>
+</div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <div 
+            style = {{
+                backgroundColor: "black", 
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <img id="Alex" src={Alex} alt="SFV" />
+            <button onClick={handleClick}>Flip</button>
+          </div>
+  
+          <div 
+            style = {{
+                backgroundColor: "black",
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <button onClick={handleClick}>Flip</button>
+          </div>
+        </ReactCardFlip>
+
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Balrog" src={Balrog} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Birdie" src={Birdie} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Blanka" src={Blanka} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+     </div>
+</div> <br/>
+<br/>
+<br/>
+<br/>
+
+
+{/* Row 3 */}
+<div style={row}>
+<div style={column}>
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Abigail" src={Abigail} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+<div 
+  style = {{
+      backgroundColor: "black", 
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <img id="Akuma" src={Akuma} alt="SFV" />
+  <button onClick={handleClick}>Flip</button>
+</div>
+
+<div 
+  style = {{
+      backgroundColor: "black",
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <button onClick={handleClick}>Flip</button>
+</div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <div 
+            style = {{
+                backgroundColor: "black", 
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <img id="Alex" src={Alex} alt="SFV" />
+            <button onClick={handleClick}>Flip</button>
+          </div>
+  
+          <div 
+            style = {{
+                backgroundColor: "black",
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <button onClick={handleClick}>Flip</button>
+          </div>
+        </ReactCardFlip>
+
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Balrog" src={Balrog} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Birdie" src={Birdie} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Blanka" src={Blanka} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+     </div>
+</div> <br/>
+<br/>
+<br/>
+<br/>
+
+
+{/* Row 3 */}
+<div style={row}>
+<div style={column}>
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Abigail" src={Abigail} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+<div 
+  style = {{
+      backgroundColor: "black", 
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <img id="Akuma" src={Akuma} alt="SFV" />
+  <button onClick={handleClick}>Flip</button>
+</div>
+
+<div 
+  style = {{
+      backgroundColor: "black",
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <button onClick={handleClick}>Flip</button>
+</div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <div 
+            style = {{
+                backgroundColor: "black", 
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <img id="Alex" src={Alex} alt="SFV" />
+            <button onClick={handleClick}>Flip</button>
+          </div>
+  
+          <div 
+            style = {{
+                backgroundColor: "black",
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <button onClick={handleClick}>Flip</button>
+          </div>
+        </ReactCardFlip>
+
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Balrog" src={Balrog} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Birdie" src={Birdie} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Blanka" src={Blanka} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+     </div>
+</div><br/>
+<br/>
+<br/>
+<br/>
+
+
+{/* Row 4 */}
+<div style={row}>
+<div style={column}>
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Abigail" src={Abigail} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+<div 
+  style = {{
+      backgroundColor: "black", 
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <img id="Akuma" src={Akuma} alt="SFV" />
+  <button onClick={handleClick}>Flip</button>
+</div>
+
+<div 
+  style = {{
+      backgroundColor: "black",
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <button onClick={handleClick}>Flip</button>
+</div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <div 
+            style = {{
+                backgroundColor: "black", 
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <img id="Alex" src={Alex} alt="SFV" />
+            <button onClick={handleClick}>Flip</button>
+          </div>
+  
+          <div 
+            style = {{
+                backgroundColor: "black",
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <button onClick={handleClick}>Flip</button>
+          </div>
+        </ReactCardFlip>
+
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Balrog" src={Balrog} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Birdie" src={Birdie} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Blanka" src={Blanka} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+     </div>
+</div><br/>
+<br/>
+<br/>
+<br/>
+
+
+{/* Row 5 */}
+<div style={row}>
+<div style={column}>
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Abigail" src={Abigail} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+<div 
+  style = {{
+      backgroundColor: "black", 
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <img id="Akuma" src={Akuma} alt="SFV" />
+  <button onClick={handleClick}>Flip</button>
+</div>
+
+<div 
+  style = {{
+      backgroundColor: "black",
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <button onClick={handleClick}>Flip</button>
+</div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <div 
+            style = {{
+                backgroundColor: "black", 
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <img id="Alex" src={Alex} alt="SFV" />
+            <button onClick={handleClick}>Flip</button>
+          </div>
+  
+          <div 
+            style = {{
+                backgroundColor: "black",
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <button onClick={handleClick}>Flip</button>
+          </div>
+        </ReactCardFlip>
+
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Balrog" src={Balrog} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Birdie" src={Birdie} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Blanka" src={Blanka} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+     </div>
+</div> <br/>
+<br/>
+<br/>
+<br/>
+
+
+{/* Row 6 */}
+<div style={row}>
+<div style={column}>
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Abigail" src={Abigail} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+<div 
+  style = {{
+      backgroundColor: "black", 
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <img id="Akuma" src={Akuma} alt="SFV" />
+  <button onClick={handleClick}>Flip</button>
+</div>
+
+<div 
+  style = {{
+      backgroundColor: "black",
+      height: "210px", 
+      width: "210px", 
+      color: "white", 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+  <button onClick={handleClick}>Flip</button>
+</div>
+</ReactCardFlip>
+
+<ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+          <div 
+            style = {{
+                backgroundColor: "black", 
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <img id="Alex" src={Alex} alt="SFV" />
+            <button onClick={handleClick}>Flip</button>
+          </div>
+  
+          <div 
+            style = {{
+                backgroundColor: "black",
+                height: "210px", 
+                width: "210px", 
+                color: "white", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center"}}>
+            <button onClick={handleClick}>Flip</button>
+          </div>
+        </ReactCardFlip>
+
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
+  <div 
+    style = {{
+        backgroundColor: "black", 
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <img id="Balrog" src={Balrog} alt="SFV" />
+    <button onClick={handleClick}>Flip</button>
+  </div>
+
+  <div 
+    style = {{
+        backgroundColor: "black",
+        height: "210px", 
+        width: "210px", 
+        color: "white", 
+        display: "flex", 
+        justifyContent: "center", 
+        alignItems: "center"}}>
+    <button onClick={handleClick}>Flip</button>
+  </div>
+</ReactCardFlip>
+     </div>
+</div>
+</>
 
 );
 }
