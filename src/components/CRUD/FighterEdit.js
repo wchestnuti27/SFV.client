@@ -23,6 +23,7 @@ const FighterUpdate = (props) => {
         })
     }
 
+
 return(
     <Form onSubmit = {handleSubmit}>
         <FormGroup>

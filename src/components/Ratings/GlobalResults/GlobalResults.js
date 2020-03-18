@@ -55,8 +55,8 @@ const useStyles = makeStyles(theme => ({
 const GlobalResults = (props) => {
     const [fighter, setFighter] = useState('');
     const [ratings, setRatings] = useState('');
-    const [updateActive, setUpdateActive] = useState(false);
-    const [fighterToUpdate, setFighterToUpdate] = useState({});
+    // const [updateActive, setUpdateActive] = useState(false);
+    // const [fighterToUpdate, setFighterToUpdate] = useState({});
 
     const [open, setOpen] = useState(false);
     const classes = useStyles();
@@ -69,17 +69,18 @@ const GlobalResults = (props) => {
     setOpen(false);
   };
 
-const updateOn =() => {
-    setUpdateActive(true);
-}
+// const updateOn =() => {
+//     setUpdateActive(true);
+// }
 
-const updateOff = () => {
-    setUpdateActive(false);
-}
+// const updateOff = () => {
+//     setUpdateActive(false);
+// }
 
 const updateFighter = (fighter) => {
         fetch(`${APIURL}/ratings/${fighter.id}`, {
             method: 'PUT',
+            body: JSON.stringify({log: {fighter: setFighter, ratings: setRatings}}),
             headers: new Headers({
                 'Content-type': 'application/json',
                 'Authorization': props.token
@@ -121,6 +122,8 @@ const updateFighter = (fighter) => {
     
     
 return(
+
+
         <div style = {{textAlign: "center"}}>
             <br />
             <br />
@@ -210,7 +213,7 @@ return(
                                                     </Input>
                                                 <Label htmlFor="ratings"/>
                                                 <Input name="ratings" value={ratings} onChange={(e) => setRatings(e.target.value)}/>
-                                                <Button color="submit" onClick={postFighter}>Submit</Button>
+                                                <Button color="submit" onSubmit={updateFighter}>Submit</Button>
                                             </div>
                                             </Fade>
                                         </Modal>
