@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './FighterCreate.css';
-// import FighterEdit from '../FighterUpdate/FighterEdit';
+import APIURL from '../../helpers/environment';
 
 
 const FighterCreate = (props) => {
+
+    const [fighter, setFighter] = useState('');
+    const [ratings, setRatings] = useState('');
+
+    const handleSubmit= (e) => {
+        e.preventDefault();
+        fetch(`${APIURL}/ratings/${fighter.id}`, {
+            method: 'POST',
+            body: JSON.stringify({log: {fighter: setFighter, ratings: setRatings}}),
+            headers: new Headers({
+                'Content-Type': 'application/json',
+                'Authorization': props.token
+            })
+        }).then((res) => res.json())
+        .then((logData) => {
+            console.log(logData);
+            setFighter('');
+            setRatings('');
+            props.fetchFighter();
+        })
+    }
     
     return(
                 <>
                     <h2 style = {{color: "blue", fontSize: "25px"}}>Rate a Fighter</h2><br/>
-                     <Form>
+                     {/* <Form onSubmit = {handleSubmit}/> */}
                         <FormGroup>
                             <Label htmlFor="fighter" />
-                            <Input type="select" name="fighter" value={props.fighter} onChange={(e) => {props.setFighter(e.target.value); console.log(e.target.value)}}>    
+                            <Input type="select" name="fighter" value={fighter} onChange={(e) => {setFighter(e.target.value)}}>    
                                 <option value=""></option>
                                 <option value="Ryu">Ryu</option>
                                 <option value="Chun-Li">Chun-Li</option>
@@ -59,12 +80,13 @@ const FighterCreate = (props) => {
                             <br />
                         <FormGroup>
                             <Label htmlFor="ratings"/>
-                            <Input name="ratings" value={props.ratings} onChange={(e) => props.setRatings(e.target.value)}/>
+                            <Input name="ratings" value={ratings} onChange={(e) => setRatings(e.target.value)}/>
                         </FormGroup>    
-                            <Button color="submit" onClick={props.postFighter}>Click to Submit</Button><br /><br /><br /><br />
-                        </Form><br/>
+                            <Button color="submit" onClick={handleSubmit}>Click to Submit</Button><br /><br /><br /><br />
+                            
+                        
                 </>
-            )
+    )
         }
 
 export default FighterCreate;

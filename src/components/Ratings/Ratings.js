@@ -12,10 +12,10 @@ const Ratings = (props) => {
     const getFighters = () => {
         fetch(`${APIURL}/ratings/`, {
             method: 'GET',
-            headers: {
+            headers: new Headers ({
                 'Content-Type': 'application/json',
                 'Authorization': props.token
-            }
+            })
         })
         .then(res => res.json())
         .then(json => setRatings(json))
